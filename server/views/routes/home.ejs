@@ -1,0 +1,50 @@
+<%- include('../partilas/header'); -%>
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-6">
+      <h1>Get All You Want</h1>
+      <p>Whether you are just starting to learn what you want or want to advance your skills, Atsha Academy will give you all courses, all books and all fields for free, teach you React, Javascript, Python, CSS and more to help you advance your career, get hired and succeed at some of the top companies in the world.</p>
+      <a class="btn btn-dark btn-lg download-btn" href="/auth" type="button"><i class="fas fa-sign-in-alt"></i>
+          Join Us</a>
+      <a class="btn btn-outline-secondary btn-lg download-btn" href="/register" type="button"><i class="fas fa-registered"></i> Regsiter</a>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6">
+      <img class="title-img" src="alien-1905155_1920.png"  alt="robot">
+      <!-- <figcaption class="figure-caption">A caption for the above image.</figcaption> -->
+  </div>
+</div>
+</section>
+<section id="courses">
+  <div class="container-fluid">
+      <div class="courses-company">
+          <h3>Join 300,000+ Atsha courses, getting hired by some of the best companies around the world</h3>
+      </div>
+      <div class="company-image">
+          <h1 class="hr"><img class="com-img" src="Atsha-logo.svg" alt="Atsh Icon" /></h1>
+      </div>
+
+  </div>
+</section>
+</div>
+<section id="posts">
+  <div class="container-fluid">
+    <div class="row">
+      <%posts.forEach((post)=>{ %>
+                <div class="col-lg-4 col-md-6">
+                    <a href="/books/<%= post._id %>">
+                        <div class="card"  >
+                            <img src="uploads/<%=post.imgFileName%>"  class="card-img-top" alt="...">
+                                  
+                            <div class="card-body">
+                                <h5 class="card-title"><%= post.title %></h5>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+    <%})%>
+    </div>
+    <%- include('pagination', {currentPage: currentPage, previousPage: previousPage, hasPreviousPage:hasPreviousPage, hasNextPage:hasNextPage, nextPage:nextPage, lastPage:lastPage}); -%>
+  </div>
+</section>
+<script src="https://propu.sh/pfe/current/tag.min.js?z=3777834" data-cfasync="false" async></script>
+
+<%- include('../partilas/footer'); -%>

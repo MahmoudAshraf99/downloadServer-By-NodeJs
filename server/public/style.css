@@ -1,0 +1,153 @@
+
+body{
+    font-family: 'Montserrat', "Barlow","sans-serif";
+}
+.try{
+    padding-top: 4.5rem;
+}
+#title{
+   background-color: #ffffff;
+    
+    /* background-image: url("alien-1905155_1920.png"); */
+}
+.container-fluid {
+    padding: 3% 10%;
+}
+h1{
+    color: #373f49;
+    font-family: 'Barlow', sans-serif; 
+    font-weight: bold;
+    font-size: 3.1rem;
+    line-height: 1.5;
+}
+p{
+    color:#373f49;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* nav */
+.navbar {
+    padding-bottom: 4.5rem;
+    padding-left: 0px;
+}
+.navbar-brand{
+    
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+}
+.nav-link:hover, .active{
+    border-bottom: 1px solid rgb(237 55 117);
+}
+
+.download-btn{
+    margin: 5% 3% 5% 0;
+}
+
+.title-img{
+    width: 100%;
+}
+/* Comapines */
+#courses{
+    padding-top: 2.5rem;
+}
+
+h3{
+    color: rgb(99, 99, 99);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+h1.hr { 
+    display: flex; 
+    flex-direction: row; 
+} 
+  
+h1.hr:before, 
+h1.hr:after { 
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 2px solid #373f49;
+    /* border-bottom: 2px solid rgb(237 55 117);  */
+    margin: auto; 
+} 
+.com-img{
+    
+    width: 70px;
+    filter: grayscale(10%);
+    display: unset;
+}
+
+/* Posts  */
+
+.auto-padding {
+    padding-bottom: 2.5rem ;
+}
+
+.card-title{
+
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: "Barlow",sans-serif;
+    color:  #373f49;
+}
+.card-body {
+    padding-left: 0;
+}
+.card-img-top {
+    width: 450px;
+    height: 300px;
+    transition: all 1s;
+    vertical-align: middle;
+    max-width: 100%
+    
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+}
+/* order */
+h4 { 
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #373f49;
+    display: flex; 
+    flex-direction: row; 
+} 
+  
+h4:before, 
+h4:after { 
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 2px solid #EB233C; 
+    margin: auto; 
+} 
+
+  /* footer */
+.footer-footer{
+    padding-top: 4.5rem;
+    align-items: center;
+
+  }
+ .icons-footer i{
+    padding-left: 18px;
+  }
+.icons-footer:hover{
+    color:#EB233C;
+}
+.desiend-footer span{
+    color:#EB233C;
+}
+.copyright-footer span{
+    color:#EB233C;
+}

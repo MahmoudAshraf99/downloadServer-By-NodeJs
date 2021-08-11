@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="<%=details.title%>" />
+    <meta name="keywords" content="<%=details.keywords%>">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<!-- CSS -->
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/e005e36f67.js" crossorigin="anonymous"></script>
+    <title>Atsha Acadmy <%=details.title%> for free </title>
+    <meta property="og:title" content="Atsha Acadmy <%=details.title%> for free ">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Get All Udemy Courses For Free From AtshaAcadmy. Learn Programming, Hacking, IT & Software, Music, Marketing,  Free Online Courses" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="AtshaAcadmy.Com" />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+      <!-- Header section -->
+    <section id="title">
+       <div class="container-fluid"> 
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand atsha" href="/">Atsha</a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/engineering" >Engineering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/programming" >Programming</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="/marketing" >Marketing</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contact Us" >Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </section>
+<div class="container-fluid">
+  <div class="row">
+          <div class="col-md-4" style="position: relative; overflow: visible; box-sizing: border-box;">
+              <img style="vertical-align: middle; max-width: 100%" src="/uploads/<%=details.imgFileName%>" alt="Atsha-Acadmy" />
+              <p>Size: <%= details.size%> MB</p>
+              <hr style="border: 1px solid #333">
+              <p>Author: <%= details.author %></p>
+              <hr style="border: 1px solid #333">
+              <p>Downloads: <%= details.downloads %></p>
+              <hr style="border: 1px solid #333">
+          </div>
+          <div class="col-md-8">
+                  <h1><%=details.title%></h1>
+                  <p><%=details.content1%></p>
+                  <br>
+                  <p><%=details.content2%></p>
+                  <br>
+                  <p><%=details.content3%></p>
+                  <br>
+                  <p><%=details.content4%></p>
+                  <br>            
+                  <a href="/download"  id="download" class="btn btn-outline-secondary btn-lg">download</a>
+            </div>
+  </div>
+</div>
+<footer class="footer-footer">
+    <div class="container-fluid">
+      <div class="row rxnus">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="copyright-footer">
+                        <p style="padding-left: 40px">Copyright © <span>M.Ashraf 2020</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100017682426815" target="_blank"><i class="fab fa-facebook fa-2x icons-footer" style="padding-right: 40px;padding-left: 40px;"></i></a>
+                        <i class="fab fa-twitter fa-2x icons-footer" style="padding-right: 40px"></i>
+                        <i class="fab fa-instagram fa-2x icons-footer"></i> 
+                   </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="desiend-footer" >
+                        <p style="padding-left: 40px">Designed by <span>M.Ashraf</span></p>
+                    </div>
+                </div>
+  
+            </div>
+    
+    </div>
+
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  </body>
+  </html>

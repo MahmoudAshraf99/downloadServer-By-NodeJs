@@ -1,0 +1,19 @@
+<section id="pagination" >
+    <nav aria-label="...">
+      <ul class="pagination" style="display: flex; justify-content: center;align-items: center; padding-top: 50px;">
+          <% if(currentPage !== 1 && previousPage !==1){ %>
+              <li class="page-item"><a style="color: #EB233C;" class="page-link" href="?page=1 ">1</a></li>
+          <% } %> 
+          <% if(hasPreviousPage){ %>
+            <li class="page-item"><a style="color: #EB233C;" href="?page=<%= previousPage %>" class="page-link"><%=previousPage%></a></li>
+          <% } %> 
+        <li class="page-item"><a style="color: #EB233C;" href="?page=<%= currentPage %>" class="page-link active"><%=currentPage%></a></li>
+        <% if(hasNextPage){ %>
+          <li class="page-item"><a style="color: #EB233C;" href="?page=<%= nextPage %>" class="page-link"><%=nextPage%></a></li>%></a></li>
+        <% } %> 
+        <% if(lastPage !== currentPage && nextPage !== lastPage){ %>
+          <li class="page-item"><a style="color: #EB233C;" href="?page=<%= lastPage %>" class="page-link"><%=lastPage%></a></li>
+        <% } %> 
+      </ul>
+    </nav>
+</section>

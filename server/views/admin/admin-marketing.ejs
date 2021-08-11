@@ -1,0 +1,42 @@
+<%- include('../partilas/header'); -%>
+</section>
+  <div class="container-fluid">
+    <form method="post" autocomplete="off" action="/admin/marketing" enctype="multipart/form-data">
+      <div class="form-group">
+        <label>Course Image</label>
+        <input type="file" name="image" required class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <div class="form-group">
+        <label>Course File</label>
+        <input type="file" name="pdfFile"  required class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <div class="form-group">
+        <label>title</label>
+        <input type="text" name="title" class="form-control-file">
+      </div>
+      <div class="form-group">
+        <label>description1</label>
+        <input type="text" name="content1" class="form-control-file">
+      </div>
+      <div class="form-group">
+        <label>description2</label>
+        <input type="text" name="content2" class="form-control-file">
+      </div>
+      <div class="form-group">
+        <label>description3</label>
+        <input type="text" name="content3" class="form-control-file">
+      </div>
+      <div class="form-group">
+        <label>description4</label>
+        <input type="text" name="content4" class="form-control-file">
+      </div>
+      <div class="form-group">
+        <label>author</label>
+        <input type="text" name="author" required class="form-control-file">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <input type="hidden" name="_csrf" value="<%= csrfToken %> ">
+    </form>
+    <a class="btn btn-primary ml"  style="margin-top:18px" href="/signout">logout</a>
+  </div>
+<%- include('../partilas/footer'); -%>
