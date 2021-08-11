@@ -10,7 +10,8 @@ const intialSchema = (modelName, req)=>{
         author: req.body.author,
         keywords: req.body.keywords,
         size: Math.round(req.files.pdfFile[0].size / 1000000),
-        downloads: 0
+        downloads: 0,
+        created: Data.now()
 
     })
     return file;

@@ -1,7 +1,5 @@
 const User = require("../models/user.model")
-// const config = require("../../config/config")
-// const jwt = require('jsonwebtoken');
-// const expressJwt = require('express-jwt')
+
 
 const getAuth = (req, res)=>{
     return res.render('admin/auth',{
@@ -24,18 +22,9 @@ const signIn = async (req, res)=>{
                 error: "Email and Password don't match"
             })
         }
-     //   const token = jwt.sign({_id: user._id}, config.jwtSecret)
-       // res.cookie("t", token, {expire: new Date() + 9999});
        req.session.user = user
        return res.status(200).redirect('/admin')
-            // .json({
-            // token, 
-            // user:{
-            //     _id : user._id,
-            //     email: user.email,
-            //     name: user.name
-            // }
-       // })
+
     }catch(err){
         console.log(err);
         return res.status(401).json({
@@ -50,12 +39,6 @@ const signOut = (req, res, next)=>{
         messeage: "Signed Out"
     })
 }
-// const requireSignIn = expressJwt({
-//     secret: config.jwtSecret,
-//     algorithms: ['HS256'],
-//     userProperty: 'auth'
-// })
-
 
 const requireSignIn = (req, res, next)=>{
     if(req.session && req.session.user ){

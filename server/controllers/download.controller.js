@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const downloadSchema = require('../models/general.model')
+const downloadSchema = require('../models/file.model')
 const paginatePage = require('../helpers/paginateFunction')
 const intialSchema = require('../helpers/intialSchema')
 var downloadVariable = '';
